@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f5faff;
+  color: var(--Text);
+  padding: 20px;
+}
+:root {
+  --Primary: #8caedc;
+  --Text: #172136;
+}
