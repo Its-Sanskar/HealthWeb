@@ -25,8 +25,8 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="w-full md:w-[30vw] flex flex-col justify-center items-start p-5">
+      <div className="flex flex-col md:flex-row justify-center items-center">
+        <div className="  flex flex-col justify-center items-start p-5">
           <span className="text-4xl md:text-5xl font-bold">
             Providing Quality HealthCare
           </span>
@@ -37,14 +37,14 @@ export default function Home() {
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.99 }}
-            className="bg-[var(--Primary)] text-white text-xl md:text-2xl w-full md:w-[85%] font-bold p-4 md:p-5 rounded-2xl cursor-pointer"
+            className="bg-[var(--Primary)] text-white text-xl md:text-2xl w-full md:w-[85%]  p-4 md:p-5 rounded-2xl cursor-pointer"
           >
             Book an appointment
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.99 }}
-            className="border-2 border-[var(--Primary)] text-[var(--Primary)] text-xl md:text-2xl w-full md:w-[85%] font-bold p-4 md:p-5 rounded-2xl cursor-pointer my-2"
+            className="border-2 border-[var(--Primary)] text-[var(--Primary)] text-xl md:text-2xl w-full md:w-[85%] p-4 md:p-5 rounded-2xl cursor-pointer my-2"
           >
             Learn More
           </motion.button>

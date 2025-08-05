@@ -10,7 +10,6 @@ export default function NavBar() {
   return (
     <nav className="w-full bg-white shadow-md p-5">
       <div className="flex justify-between items-center text-lg text-[var(--Text)]">
-       
         <div className="text-3xl font-bold">HealthCare++</div>
 
         {/* Desktop Nav */}
@@ -22,7 +21,6 @@ export default function NavBar() {
           <li>Services</li>
         </ul>
 
-        
         <motion.span
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
