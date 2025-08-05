@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "motion/react";
 import { MdMedicalServices } from "react-icons/md";
 import { FaUserDoctor } from "react-icons/fa6";
@@ -25,8 +25,8 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="  flex flex-col justify-center items-start p-5">
+      <div className="flex flex-col md:flex-row justify-center items-center ">
+        <div className="  flex flex-col justify-center items-start p-5 md:w-[40vw]">
           <span className="text-4xl md:text-5xl font-bold">
             Providing Quality HealthCare
           </span>
@@ -37,6 +37,7 @@ export default function Home() {
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.99 }}
+            // transition={{duration:0.2}}
             className="bg-[var(--Primary)] text-white text-xl md:text-2xl w-full md:w-[85%]  p-4 md:p-5 rounded-2xl cursor-pointer"
           >
             Book an appointment
@@ -51,6 +52,7 @@ export default function Home() {
         </div>
 
         {/* Doctor Image */}
+
         <img
           className="w-full md:w-2/4 max-w-[600px]"
           style={{
@@ -61,6 +63,9 @@ export default function Home() {
           }}
           src="/doctor.png"
           alt="Doctor"
+          onLoad={() => {
+            setLoading(false);
+          }}
         />
       </div>
 
